@@ -1,0 +1,14 @@
+/* 16px = 1em */
+body{
+    border: 1px red;
+    font-size: 16px;
+    margin: 0px auto;
+    max-width: 1024px;
+}
+header{
+    background-color: #D1E3EE;
+}
+#logo{ /* id="logo" */
+    margin: -150px 0px 0px 0px;
+    /* margin-top: -150px; */
+}
