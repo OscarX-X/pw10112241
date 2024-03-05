@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica 02 CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
         <img src="img/banner.png" alt="Linea">
-        <img src="img/granthams.png" alt="Granthms">
-        <img src="img/paint.png" alt="Picture">
+        <img src="img/granthams.png" id="Granthms" alt="Granthms">
+        <img src="img/paint.png" id="paint" alt="Picture">
         <input type="search" placeholder="Search" size="25">
         <naV>
-            <ul>Print</ul>
-            <ul>Copy</ul>
-            <ul>Finished</ul>
-            <ul>Desing</ul>
-            <ul>Exhibition</ul>
+            <ul>
+                <li>Print</li>
+                <li>Copy</li>
+                <li>Finished</li>
+                <li>Desing</li>
+                <li>Exhibition</li>
+            </ul>
         </naV>
     </header>
-    <section>
-        <article>
+    <section id="primeraseccion">
+        <article id="seccion01art01">
             <img src="img/slide.jpg" alt="Slide">
         </article>
-        <article>
-            We can offer...
-            <ul>
+        <article id="seccion01art02">
+            <span class="letragrande colorrosa nito">We can offer</span>
+            <ul >
                 <li>Highly Competitive Prices</li>
                 <li>Variable Data</li>
                 <li>Fast Turnaround</li>
@@ -36,35 +39,35 @@
                 <li>Great Customers Service</li>
             </ul>
         </article>
-        <img src="img/bg_offer.png" alt="Ofertas">
+        <img src="img/bg_offer.png" id="bg_offer" alt="Ofertas">
     </section>
-    <section>
+    <section id="segudseccion">
         <article>
-            01772 250207
+            <span class="letramediana colorrosa nito">01772 250207</span>
         </article>
     </section>
-    <section>
+    <section id="terceraseccion">
         <article>
-            <img src="img/cerdito.png" alt="Cerdito"> Save this Spring
+            <img src="img/cerdito.png" alt="Cerdito"> <span class="colorrosa nito">Save this Spring</span>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur corporis nobis sapiente cumque repudiandae sit tenetur, perspiciatis, distinctio culpa quos aperiam itaque nemo minima, est dolorum ab recusandae minus.
             <p>
-            Find out more...
+            <span class="colorrosa">Find out more</span>
         </article>
         <article>
-            <img src="img/hoja.png" alt="Hoja"> Eco Friendly
+            <img src="img/hoja.png" alt="Hoja"> <span class="colorverde nito">Eco Friendly</span>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus autem nemo voluptatum, tempora quos ipsa sint. Ducimus optio atque quam voluptate in eaque officiis velit dolor reprehenderit, voluptates suscipit dolorem!
         </article>
         <article>
             <img src="img/new.png" alt="Nuevo">
+            <span class="colorazul nito">Upload your File Now...</span>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minus dolorum illum doloribus vel veritatis blanditiis, saepe, nostrum et ratione maiores cum, dolorem quaerat aspernatur ipsam corporis voluptate molestias explicabo?
             <p></p>
-            Uplad your File Now...
         </article>
         <article>
-            Stay in touch
+            <span class="letramediana colorrosa">Stay in touch</span>
             <br>
             Join our miling list today
             <input type="email" placeholder="Email goes here">
