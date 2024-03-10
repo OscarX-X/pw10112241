@@ -1,0 +1,117 @@
+body
+{
+    /*border: red solid;*/
+    font-size: 16px; /*1em*/
+    margin: 0px auto;
+    /* tamaño maximo */
+    max-width: 1078px;
+    /* tamaño minimo */
+    min-width: 1078px;
+}
+/* afectamos todos los input dentro del header */
+header input
+{
+    float: right; 
+    margin-right: -200px;
+    margin-top: 15px;
+    position: relative;
+}
+header nav
+{
+    /* para saber donde esta la caja */
+    /*border: 1px solid red;*/
+    /* margin-texaline-.... */
+    margin-left: 220px;
+}
+header nav ul li 
+{
+    /* borde hacia abajo, de color gris */
+    border-bottom: 1px solid gray;
+    /* letras de color gris */
+    color: gray;
+    /* formato horizontal */
+    display: inline-block;
+    /* aumentar tamaño de letra */
+    font-size: 1.8em;
+    /* para separar */
+    margin-right: 15px;
+    /* subrayar las letras    text-decoration: underline;   no nos sirve*/
+    /* espacio entre la letra y el fondo de la caja (subrayado*/
+   padding-bottom: 2px;
+}
+#bgoffer
+{
+    /* tiene una posicion relativa, se puede mover libremente por la pantalla */
+    left: -35px;
+    position: relative;
+    top: -410px;
+}
+#granthams
+{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+#paint
+{
+    /* mover a la derecha */
+    float: right;
+}
+#primerseccion
+{
+    /* border: blue solid; */
+    height: 318px;
+    margin-top: 60px;
+}
+#primerseccion article
+{
+    /* se alinean horizontalmente siempre y cuando quepan en la pantalla */
+    display: inline-block;
+    /* alineate hacia arriba */
+    vertical-align: top;
+}
+#secc01art01
+{
+   /* border: 1px red solid;*/
+    /* le damos un ancho de 61% */
+    width: 61%;
+}
+#secc01art02
+{
+    /*border: 1px red solid;*/
+    /* para moverlo a la dereacha */
+    margin-left: 50px;
+    /* que no de el 100% */
+    width: 30%;
+}
+#secc01art02 ul
+{
+    /* que el estilo de lista no tenga nada, le quitamos el • del inicio */
+    list-style: none;
+}
+#secc01art02 ul li:before
+{
+    /* modificar a la izquierda del texto(el punto negro a rosa) ponemos :before*/
+    color: #FF0099;
+    content: "• ";
+}
+.colorazul
+{
+    color: #4267B3;
+}
+.colorrosa
+{
+    color: #FF0099
+}
+.colorverde
+{
+    color: #8BC500;
+}
+.letragrande
+{
+    font-size: 3.5em;
+}
+.nito
+{
+    /* PARA PONER NEGRITAS */
+    font-weight: bold;
+}
