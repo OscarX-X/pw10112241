@@ -16,12 +16,28 @@ body{
     max-width: 1024px;
 }
 
+footer img{
+    width: 300px;
+}
+
+footer article{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    vertical-align: top;
+    width: 31.1%;
+}
+
+header ul{
+    margin-left: -25px;
+}
+
 header ul li{
     display: inline-block;
     margin-left: -10px;
     padding: 8px 14px;
     text-align: center;
-    width: 17.0%;
+    width: 17.73%;
 }
 
 header ul li:nth-child(2){
@@ -38,6 +54,11 @@ header ul li:nth-child(4){
 
 header ul li:nth-child(5){
     background: var(--color-gris);
+}
+
+hr{
+    border-style: dashed;
+    color: var(--color-linea);
 }
 
 section article{
@@ -86,6 +107,11 @@ section img{
 
 .letra-gris{
     color: var(--color-linea)
+}
+
+.read-more{
+   /* border: 1px solid red;*/
+    margin-left:  220px;
 }
 
 .tam-menu.lateral{
