@@ -1,0 +1,195 @@
+html{
+    --color-verde: rgb(25 168 32);
+    --color-azul: rgb(27 109 169);
+    --color-morado: rgb(127 26 168);
+    --color-rojo: rgb(167 26 25);
+}
+
+body{
+    font-size: 16px; /* 1em */
+    margin: 0px auto;
+    max-width: 1078px;
+    min-width: 1078px;
+}
+
+header{
+    background-color: rgb(36 93 146);    
+}
+
+header img{
+    width: 200px;
+    padding-left: 40%;
+    margin-top: 5px;
+}
+
+main{
+    background-color: rgb(239 239 239);
+    margin-top: -2px; 
+    border: 1px solid white;
+}
+
+#seccion01 nav ul{
+    background-color: rgb(239 239 239);
+}
+
+#notifi {
+    width: 110px;
+    margin-left: 200px;
+}
+
+#mensaje {
+    width: 95px;
+    margin-bottom: -3px;
+}
+
+#ajust {
+    width: 85px;
+    margin-bottom: -3px;
+}
+
+
+
+section nav{
+    display: inline block;
+    color: white;
+    background-color: rgb(230 230 230);
+    margin-left: 500px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-right:  15px;
+    padding-bottom: 2px;
+}
+
+#seccion02 {
+    width: 270px;
+    margin-left: 15px;
+}
+
+#seccion02art01 {
+    background-color: rgb(28 74 116);
+}
+
+#seccion02art01 nav ul {
+    list-style: none;
+    padding: 0; 
+}
+
+#seccion02art01 nav ul li {
+    position: relative;
+    margin-bottom: -8px; /* Espacio entre cada imagen */
+    margin-left: -500px;
+}
+
+#seccion02art01 nav ul li img {
+    width: 80px; /* Tamaño reducido para las imágenes "example" */
+    margin-left:  10px;
+    margin-bottom: 5px;
+}
+
+#seccion02art01 nav ul li #pwl {
+    width: 270px; 
+    margin-top: -16px;
+    margin-left: 0px;
+}
+
+
+#seccion02art02 {
+    background-color: white;
+    margin-top: 20px;
+}
+
+#seccion02art02 nav ul {
+    list-style: none;
+    padding: 0; 
+}
+
+#seccion02art02 nav ul li {
+    position: relative;
+    margin-bottom: 4px; 
+    margin-left: -500px;
+
+}
+#seccion02art02 nav ul li img {
+    width: 270px; 
+    margin-left: 0px;
+}
+
+#seccion02art02 nav ul li.letra-negra {
+    margin-left: -490px; 
+}
+
+#seccion02art02 nav ul li #pwp {
+    width: 271px;  
+}
+
+#seccion03 {
+    background-color: white;
+    position: absolute;
+    top: 160px; 
+    left: 500px; 
+    width: 765px; 
+    border: 1px solid red;
+}
+
+#seccion03 section {
+    display: flex; 
+    padding: 18px 8px;
+    width: 96%; 
+}
+
+#seccion03 section:first-child article img {
+    margin-right: 10px; 
+    margin-top: 10px; 
+    margin-left: 40px; 
+    width: 80px;
+}
+
+#seccion03 section article {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 140px; 
+}
+
+
+#seccion03 section article:nth-child(2){
+    background: var(--color-verde);
+    
+}
+
+#seccion03 section article:nth-child(3){
+    background: var(--color-azul);
+}
+
+#seccion03 section article:nth-child(4){
+    background: var(--color-morado);
+}
+
+#seccion03 section article:nth-child(5){
+    background: var(--color-rojo);
+}
+
+#pan{
+    margin-left: 500;
+}
+
+.simpleCubes, .letra-gris{
+    color: rgb(168 168 168);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.letra-gris{
+    color: rgb(168 168 168);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.letra-blanca {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
