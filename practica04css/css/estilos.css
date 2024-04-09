@@ -1,0 +1,144 @@
+body{
+    font-size: 16px;
+    margin: 0 auto; /* Simplifica la alineación horizontal */
+    max-width: 1078px;
+    min-width: 1078px;
+}
+
+header nav{
+    margin-left: -25px;
+}
+
+header nav ul {
+    margin-top: 40px; 
+}
+
+header nav ul li{
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 15px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    margin-bottom: -13px;
+    margin-bottom: 30px;
+}
+
+#firtsB{
+    margin-top: 20px;
+}
+
+#mundo, #band, #logroj {
+    float: right;
+    margin-top: 5px;
+}
+
+.linea-horizontal-punteada {
+    border-style: dotted;
+    border-top-width: 2px;
+    border-color: black;
+    margin-top: 20px; /* Ajusta el margen superior entre las líneas punteadas */
+}
+
+.linea-horizontal {
+    border-top: 1px solid grey; /* Grosor y color de la línea */
+    margin-top: 20px; /* Espacio entre la línea y el elemento superior */
+}
+
+#buyy {
+    position: absolute;
+    top: 12vh; /* 5% de la altura de la ventana */
+    right: 35vw; /* 10% del ancho de la ventana */
+    width: 3%; /* 10% del ancho de la ventana */
+}
+
+#go_to_shop {
+    position: absolute;
+    top: 5vh; /* 5% de la altura de la ventana */
+    right: 28vw; /* 10% del ancho de la ventana */
+    width: 8%; /* 10% del ancho de la ventana */
+}
+
+#seccion01art01{
+    /*border: 1px solid red;*/
+    margin-right: 50px;
+    width: 57%;
+}
+
+#v1, #v2 {
+    display: inline-block; /* Muestra las imágenes en línea */
+    width: 48%; /* Establece el ancho al 45% */
+    margin: 0 5px; /* Establece el mismo margen de 5px en todos los lados */
+}
+
+#fiveyears {
+    left: 240px;
+    position: relative;
+    top: -520px;
+    width: 120px;
+}
+
+#bik {
+    left: 650px;
+    position: relative;
+    top: -500px;
+    margin-top: 30px;
+    width: 390px;
+
+}
+
+#seccion02 {
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 20px; /* Ajusta el margen inferior para separar de las imágenes */
+    margin-top: -450px; /* Mueve la seccion02 hacia arriba */
+}
+
+#seccion02 img {
+    width: 100px; /* Ajusta el ancho de la imagen según sea necesario */
+    margin-right: 10px; /* Ajusta el margen entre la imagen y el texto */
+}
+
+#seccion02 .letra-gris {
+    margin-left: 10px; /* Ajusta el margen entre la imagen y el texto */
+}
+
+footer article {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    vertical-align: top;
+    width: 17%;
+}
+
+.letra_negra, .letra_verde, .letra_gris {
+    font-family: "HGPGothicE", sans-serif;
+    margin-left: 15px;
+}
+
+.letra-gris {
+    color: gray;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.letra-gris-negrita {
+    color: gray;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold; /* Agrega negritas al texto */
+}
+
+.titulo {
+    color: black;
+    font-size: 3.5em;
+}
+
+.subtitulo {
+    color: rgb(115 243 61);
+    font-size: 3.5em;
+}
+
