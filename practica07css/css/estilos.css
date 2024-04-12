@@ -1,0 +1,101 @@
+body{
+    font-size: 16px; /* 1em */
+    margin: 0px auto;
+    max-width: 1000px;
+    min-width: 1000px;
+    border: 1px solid red;
+}
+
+header{
+    background-color: rgb(28 36 49);
+}
+
+header nav ul {
+    margin-top: -30px;
+    margin-left: 600px;
+    margin-bottom: 0px;
+    border-bottom: 30px;
+
+}
+
+header nav ul li {
+    color: gray;
+    display: inline-block;
+    margin-right:  15px;
+    padding-bottom: 2px;
+}
+
+#nombrePag {
+    margin-top: 50px;
+    font-size: 1.1em;
+}
+
+#social {
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+#seccion01 {
+    padding-top: 102px; /*AQUI*/
+    text-align: center;
+    background-color: rgb(28 36 49);
+    margin-top: -1px;
+}
+
+button img {
+    width: 10px;
+}
+#btn1 {
+    padding: 10px;
+    background-color: rgb(29 78 216);
+    border-radius: 20px;
+    border-style: rgb(29 78 216);
+    color: white;
+}
+
+#btn2 {
+    padding: 10px;
+    background-color: rgb(56 65 82);
+    border-radius: 20px;
+    border-style: rgb(56 65 82);
+    color: white;
+}
+
+#seccion02 {
+    padding-top: 100px;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+footer article {
+    display:  inline-block;
+    vertical-align: top;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 23%;
+}
+
+footer article img{
+    margin-left: 30px;
+}
+
+#desk{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: -80px;
+    border: 4px solid white;
+}
+
+.colorBlanco {
+    color: white;
+}
+
+.letraGrande {
+    font-size: 1.5em;
+}
+
+.letraGris{
+    color: rgb(130 138 150);
+}
