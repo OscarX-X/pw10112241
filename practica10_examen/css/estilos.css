@@ -1,0 +1,88 @@
+body {
+    font-size: 16px; /* 1em */
+    margin: 0px auto;
+    max-width: 1000px;
+    min-width: 1000px;
+
+}
+
+header article{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 110px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+#godCodes {
+    margin-top: 10px;
+}
+
+main section {
+    margin-top: 20px;
+}
+
+main section article {
+    background-color: rgb(250 250 250);
+}
+
+main section article button {
+    margin-left: 260px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#work {
+    width: 50%;
+    margin-left: 180px;
+}
+
+#btn1 {
+    padding: 10px;
+    background-color: white;
+    border-style: red;
+    border-radius: 10px;
+    color: red;
+}
+
+#btn2 {
+    padding: 10px;
+    background-color: rgb(255 1 67);
+    border-style: ridge;
+    border-radius: 10px;
+    color: white;
+}
+
+main section {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer article {
+    display:  inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 20%;
+}
+
+.letraGris {
+    color: gray;
+}
+
+.negrita {
+    font-size: 2;
+    font-weight: bold;
+}
+.letraGrande {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
