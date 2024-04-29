@@ -40,6 +40,17 @@ app.get("/", function(req, res) {
     res.send("Ruta de inicio")
 })
 
+// Seleccionamos un cliente en especifico
+app.get('/api/clientes2/:id', (req, res) => {
+    conexion.query('SELECT * FROM clientes2 WHERE id=?', [req.params.id], (error, fila) => {
+        if (error) {
+            throw error;
+        } else {
+            res.send(fila);
+        }
+    })
+});
+
 // Encender el servidor
 let puerto = 3000; 
 app.listen(puerto, function() {
