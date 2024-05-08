@@ -24,6 +24,11 @@ conexion.connect(function(error) {
     }
 })
 
+// Rutas de acceso
+app.get("/", function(req, res) {
+    res.send("Ruta de inicio")
+})
+
 // Seleccionamos todos lo clientes
 app.get('/api/clientes2', (req, res) => {
     conexion.query('SELECT * FROM clientes2', (error, filas) => {
@@ -35,14 +40,9 @@ app.get('/api/clientes2', (req, res) => {
     });
 });
 
-// Rutas de acceso
-app.get("/", function(req, res) {
-    res.send("Ruta de inicio")
-})
-
 // Seleccionamos un cliente en especifico
 app.get('/api/clientes2/:id', (req, res) => {
-    conexion.query('SELECT * FROM clientes2 WHERE id=?', [req.params.id], (error, fila) => {
+    conexion.query('SELECT * FROM clientes2 WHERE id=?', (req, params, id), (error, fila) => {
         if (error) {
             throw error;
         } else {
@@ -84,6 +84,28 @@ app.post('/api/clientes2', (req, res) => {
         }
     })
 });
+
+// Actualizar 
+app.put('/api/clientes2/:id', (req, res) => {
+
+    let id = req.params.id;
+    let nombre = req.boparamsdy.nombre;
+    let appellido = req.bparamsody.appellido;
+    let direccion = req.boparamsdy.direccion;
+    let telefono = req.params.telefono;
+    let rfc = req.bparamsody.rfc;
+    let curp = req.params.curp;
+    let cp = req.params.cp; 
+    let sql = "UPDATE clientes2 SET nombre=?, appellido=?, direccion=?, telefono=?, rfc=?, curp=?, cp=? WHERE id=?";
+    conexion.query(sql,[nombre, appellido, direccion, telefono, rfc, curp, cp, id], (error, results) => {
+        if (error) {
+            throw error;
+        } else {
+            res.send();
+        }
+    })
+});
+    
 
 // Encender el servidor
 let puerto = 3000; 
