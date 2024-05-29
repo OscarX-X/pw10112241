@@ -117,7 +117,7 @@
                 this.guardarCliente();
             },
             guardarCliente(){
-                axios.post('http://localhost:3000/api/clientes2', this.model.cliente)
+                axios.post('http://localhost:3000/api/clientes', this.model.cliente)
                     .then(res => {
                         if(res.data.affectedRows == 1){
                                 this.model.cliente = {

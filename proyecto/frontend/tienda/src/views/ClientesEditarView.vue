@@ -121,7 +121,7 @@
                 this.actualizarCliente();
             },
             getCliente(clienteID){
-                axios.get('http://localhost:3000/api/clientes2/'+clienteID).then(res=>{
+                axios.get('http://localhost:3000/api/clientes/'+clienteID).then(res=>{
                     // console.log(res.data)
                     this.model.cliente = res.data[0]
                     // this.model.cliente.id=res.data[0].id
@@ -136,7 +136,7 @@
             },
             actualizarCliente(){
                 this.model.cliente.id = this.$route.params.id
-                axios.put('http://localhost:3000/api/clientes2/'+this.model.cliente.id, this.model.cliente)
+                axios.put('http://localhost:3000/api/clientes/'+this.model.cliente.id, this.model.cliente)
                     .then(res => {
                         if(res.data.affectedRows == 1){
                                 this.model.cliente = {

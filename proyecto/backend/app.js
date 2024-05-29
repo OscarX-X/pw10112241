@@ -30,8 +30,8 @@ app.get("/", function(req, res) {
 })
 
 // Seleccionamos todos lo clientes
-app.get('/api/clientes2', (req, res) => {
-    conexion.query('SELECT * FROM clientes2', (error, filas) => {
+app.get('/api/clientes', (req, res) => {
+    conexion.query('SELECT * FROM clientes', (error, filas) => {
         if (error) {
             throw error;
         } else {
@@ -41,8 +41,8 @@ app.get('/api/clientes2', (req, res) => {
 });
 
 // Seleccionamos un cliente en especifico
-app.get('/api/clientes2/:id', (req, res) => {
-    conexion.query('SELECT * FROM clientes2 WHERE id=?', (req, params, id), (error, fila) => {
+app.get('/api/clientes/:id', (req, res) => {
+    conexion.query('SELECT * FROM clientes WHERE id=?', (req, params, id), (error, fila) => {
         if (error) {
             throw error;
         } else {
@@ -53,7 +53,7 @@ app.get('/api/clientes2/:id', (req, res) => {
 
 app.delete('/api/clientes2/:id', (req, res) => {
     let id = req.params.id;
-    conexion.query('DELETE FROM clientes2 WHERE id=?', [id], (error, filas) => {
+    conexion.query('DELETE FROM clientes WHERE id=?', [id], (error, filas) => {
         if (error) {
             throw error;
         } else {
@@ -63,7 +63,7 @@ app.delete('/api/clientes2/:id', (req, res) => {
 });
 
 // Insertar un nuevo cliente
-app.post('/api/clientes2', (req, res) => {
+app.post('/api/clientes', (req, res) => {
     let data = {
         id:req.body.id,
         nombre:req.body.nombre,
@@ -75,7 +75,7 @@ app.post('/api/clientes2', (req, res) => {
         cp:req.body.cp
     }
 
-    let sql = 'INSERT INTO clientes2 SET ?';
+    let sql = 'INSERT INTO clientes SET ?';
     conexion.query(sql, data, (error, resultado) => {
         if (error) {
             throw error;
@@ -86,7 +86,7 @@ app.post('/api/clientes2', (req, res) => {
 });
 
 // Actualizar 
-app.put('/api/clientes2/:id', (req, res) => {
+app.put('/api/clientes/:id', (req, res) => {
 
     let id = req.params.id;
     let nombre = req.boparamsdy.nombre;
@@ -96,7 +96,7 @@ app.put('/api/clientes2/:id', (req, res) => {
     let rfc = req.bparamsody.rfc;
     let curp = req.params.curp;
     let cp = req.params.cp; 
-    let sql = "UPDATE clientes2 SET nombre=?, appellido=?, direccion=?, telefono=?, rfc=?, curp=?, cp=? WHERE id=?";
+    let sql = "UPDATE clientes SET nombre=?, appellido=?, direccion=?, telefono=?, rfc=?, curp=?, cp=? WHERE id=?";
     conexion.query(sql,[nombre, appellido, direccion, telefono, rfc, curp, cp, id], (error, results) => {
         if (error) {
             throw error;

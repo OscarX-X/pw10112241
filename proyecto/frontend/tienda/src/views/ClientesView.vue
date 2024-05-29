@@ -66,12 +66,12 @@
         },
         methods: {
             getClientes(){
-                axios.get('http://localhost:3000/api/clientes2').then(res=>{
+                axios.get('http://localhost:3000/api/clientes').then(res=>{
                     this.clientes = res.data;
                 });
             },
             deleteCliente(c){
-                axios.delete('http://localhost:3000/api/clientes2/'+c).then(res =>{
+                axios.delete('http://localhost:3000/api/clientes/'+c).then(res =>{
                     if(res.data.affectedRows > 0){
                         this.getClientes();
                     }
